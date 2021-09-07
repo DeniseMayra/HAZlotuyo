@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto </title>
+    <link rel="stylesheet" href="/Users/denisehiga/Documents/DeWeb/proyecto/sublimaciones_higa/css/estilox.css">
+    <link rel="stylesheet" href="/Users/denisehiga/Documents/DeWeb/proyecto/sublimaciones_higa/css/mediaq.home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Patrick+Hand&display=swap" rel="stylesheet">
+    CSS rules to specify families
+    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  
+</head>
+<body>
+    <header>
+        <div class="imagen">
+            <div class="animate__animated animate__fadeInTopLeft">
+                <img src="/Users/denisehiga/Documents/DeWeb/proyecto/sublimaciones_higa/multimedia/logo.PNG" alt="">
+       
+            </div>
+        </div>
+        <div class="slogan">
+            <p class="animate__animated animate__fadeInUpBig">HAZ lo tuyo </p>  
+
+        </div>
+        
+        <nav class="animate__animated animate__fadeInBottomRight ">
+            
+                <ul>
+                    <li> <a href="/Users/denisehiga/Documents/DeWeb/proyecto/sublimaciones_higa/index.html" > Home </a></li>
+                    <li> <a> Producto </a>
+                            <ul> 
+                                <li> <a href="/Users/denisehiga/Documents/DeWeb/proyecto/sublimaciones_higa/pages/tazas.html">Tazas </a></li>
+                                <li> <a href="/Users/denisehiga/Documents/DeWeb/proyecto/sublimaciones_higa/pages/indumentaria.html">Indumentaria </a></li>
+                            </ul></li>
+                    <li> <a href="/Users/denisehiga/Documents/DeWeb/proyecto/sublimaciones_higa/pages/contacto.html" > Contacto </a></li>
+                   
+                </ul>
+            
+            
+        </nav>
+    </header>
+
+
+    <main>
+        <form action="" >
+            <fieldset class="formulario">
+                
+                <legend>Informacion de contacto</legend>
+
+                <div>
+                    <label for="nombreusuario">Nombre y Apellido</label>
+                    <input type="text"  id="nombreusuario" placeholder="Ingrese su nombre">
+                </div>
+                
+                <div>
+                    <label for="viacontacto"> Como nos contactamos? </label>
+                    <select name="" id="viacontacto"> 
+                        <option value="">via email</option>
+                        <option value="">via whatsapp</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mail">Email</label>
+                    <input type="text" id="mail" placeholder="ej: denise.mayra@gmail.com">
+                </div>
+               
+                <div>
+                    <label for="celular">Numero de celular</label>
+                    <input type="number" id="celular" placeholder="ej: 11 2345 6789">
+                </div>
+                
+                <div>
+                    <p>Deja tu comentario </p>
+                    <textarea name="comentarios" id="" cols="30" rows="10" > </textarea>
+                </div>
+                
+                
+
+              
+                <fieldset class="formulario__dos">
+                    <legend>Informacion del producto</legend>
+                    <div>
+                        <label for="prod">Taza </label>
+                        <input type="radio" name="prod">
+
+                        <select name="" id="material">
+                            <option value="">Ceramica </option>
+                            <option value="">Termico </option>
+                            <option value="">Plastico </option>
+                            <option value="">Chop cervecero </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="prod__dos">Plato </label>
+                        <input type="radio" name="prod__dos" id="">
+                    </div>
+                    <div>
+                        <label for="prdo__tres">Remera </label>
+                        <input type="radio" name="prdo__tres">
+
+                        <select id="talle">
+                
+                            <option value="">S</option>
+                            <option value="">M</option>
+                            <option value="">L</option>
+                            <option value="">XL</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="prod__cuatro">Buzo </label>
+                        <input type="radio" name="prod__cuatro">
+
+                        <select id="talle">
+                
+                            <option value="">S</option>
+                            <option value="">M</option>
+                            <option value="">L</option>
+                            <option value="">XL</option>
+                        </select>
+                    </div>
+                    <div class="formulario__item">
+                        <p>Adjuntar la imagen que desea sublimar</p>
+                        <input type="file" name="" id="" value="seleccione un archivo" class="parrafo__boton">
+
+                    </div>
+
+                    
+                </fieldset>
+
+                <div class="formulario__itemdos">
+                    <label for="terminos"> Acepto recibir notificaciones</label>
+                    <input type="checkbox" id="temrminos">
+                
+
+                    <input type="submit" name="enviar" id="" class="parrafo__boton">
+                    <input type="reset" name="reset" class="parrafo__boton">
+
+                </div>
+              
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Hugo Zaccaro </p>
+        <div class="insta">
+            <a href="https://www.instagram.com/haz.lotuyosublimados/?hl=es"> 
+                <img src="/Users/denisehiga/Documents/DeWeb/proyecto/sublimaciones_higa/multimedia/instagram-icon.png" alt=""></a>
+        </div>
+        <div class="wpp">
+            <a href="https://api.whatsapp.com/send?phone=5491168359317">
+            <img src="multimedia/wpp-icon.png" alt=""></a>
+        </div>
+        
+    </footer> 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>
