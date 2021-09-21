@@ -2,7 +2,6 @@
 ul {list-style-type: none;}
 img { max-width: 100%; max-height: 100%;}
 
-/* estoy en la ramadesafio creada para el entregable de este sabado*/
 
 header {
     background-image: url("../assets/background.logos/header.jpg");
@@ -16,16 +15,12 @@ header {
                         "logo navegador";
 
     font-family: 'Barlow Condensed', sans-serif;
-    
    
-    /*
-    position: sticky;
-    top: 0 ;*/
 }   
 .imagen {
     grid-area: logo;
     padding: 20px;
-    height: 150px;
+    width: 150px;
 }
 .slogan {
     grid-area: slogan;
@@ -81,7 +76,7 @@ nav ul li a:hover {
     color: rgb(196, 255, 249);
 }
 
-
+/* ------------ MAIN ---------------*/
 main {
     height: auto;
     background-image: linear-gradient(to bottom, rgb(216, 243, 220), rgb(144, 224, 239));
@@ -101,12 +96,11 @@ main {
    font-family: 'Barlow Condensed', sans-serif;
 }
 
-/* HOME */
+/* ------------ HOME ------------ */
 
 .cajauno {width: 80%;
-    grid-area: cajauno;
-    line-height: 40px;
-    
+    grid-area: cajados;
+    line-height: 60px;
     padding-top: 80px;
     font-size: 25px;
 }
@@ -118,7 +112,9 @@ main {
     padding: 8px;
     transition: 1s;
     justify-self: center;
-    background-color: rgb(156, 234, 239)
+    background-color: rgb(156, 234, 239);
+    border-radius: 5%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
 }
 #boton a {text-decoration: none; color: rgb(3, 84, 109);
 }
@@ -130,7 +126,7 @@ main {
 #boton:hover a {color: rgb(196, 255, 249);}
 
 .cajados { width: 85%;
-    grid-area: cajados;
+    grid-area: cajauno;
     align-self: center;}
 
 .cajatres {grid-area: cajatres;
@@ -190,7 +186,12 @@ form {
     padding: 60px;
 }
 .formulario__itemdos {
-    padding: 60px;
+    padding: 60px 60px 0 60px;
+    text-align: center;
+}
+.formulario__itemtres {
+    text-align: center;
+    padding-bottom: 60px;
 }
 
 
