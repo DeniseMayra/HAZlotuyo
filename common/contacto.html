@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contacto </title>
-    <link rel="stylesheet" href="../css/estilox.css">
-    <link rel="stylesheet" href="../css/mediaq.home.css">
+    
 
     <link rel="shortcut icon" href="../assets/background.logos/logo.PNG" type="image/x-icon">
 
@@ -26,13 +25,11 @@
 </head>
 <body>
     <header>
-        <div class="slogan">
-            <p>HAZ lo tuyo </p>
-        </div>
+       
         
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="logo" src="../assets/background.logos/logo.PNG" alt="" ></a>
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/background.logos/logoblanco.PNG" alt="Logotipo HAZ lo Tuyo" ></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -57,28 +54,119 @@
         </nav>
 
 
-        <!-- <nav class="animate__animated animate__fadeInBottomRight ">
-            <button class="toggle">
-                <i class="fas fa-bar"></i>
-            </button>
-            <ul class="nav-menu">
-                <li class="nav-menu-item"> <a href="index.html" class="nav-menu-link"> Home </a></li>
-                <li class="nav-menu-item"> <a class="nav-menu-link"> Producto </a>
-                        <ul> 
-                            <li> <a href="common/tazas.html" class="nav-menu-link">Tazas </a></li>
-                            <li> <a href="common/indumentaria.html" class="nav-menu-link">Indumentaria </a></li>
-                        </ul></li>
-                <li class="nav-menu-item"> <a href="common/contacto.html" class="nav-menu-link"> Contacto </a></li>
-               
-            </ul>
-        
-        
-        </nav>  -->
     </header>
 
 
     <main>
-        <form action="" >
+
+        <div class="contacto__container">
+
+            <form action="" id="form1">
+
+                <h4>Informacion de Contacto</h4>
+                <input type="text" placeholder="Nombre y Apellido" required>
+                <input type="text" placeholder="Email" required>
+                <input type="number" placeholder="Telefono " required>
+
+                <div class="boton-box">
+                    <button type="button" id="next1">Siguiente</button>
+                </div>
+
+            </form>
+
+            <form action="" id="form2">
+
+                <h4>Informacion de Producto</h4>
+                <select name="" id="producto" >
+                    <option value="">Taza </option>
+                    <option value="">Remera</option>
+                    <option value="">Musculosa </option>
+                    <option value="">Buzo </option>
+                </select>
+                <select name="" id="Material ">
+                    <option value="">Taza de Ceramica </option>
+                    <option value="">Taza de Plastico </option>
+                    <option value="">Taza Termica</option>
+                </select>
+                <select name="" id="Talle ">
+                    <option value="">S </option>
+                    <option value="">M </option>
+                    <option value="">L </option>
+                    <option value="">XL </option>
+                </select>
+
+                <div class="boton-box">
+                    <button type="button" id="back1">Anterior</button>
+                    <button type="button" id="next2">Siguiente</button>
+                </div>
+
+            </form>
+
+            <form action="" id="form3">
+
+                <h4>Informacion de Producto </h4>
+                <p>Deja tu comentario </p>
+                <textarea name="comentarios" id="" cols="30" rows="10" > </textarea>
+
+                <p>Adjuntar la imagen que desea sublimar</p>
+                <input type="file" name="" id="" value="seleccione un archivo" >
+
+               
+                
+
+                <div class="boton-box">
+                    <button type="button" id="back2">Anterior</button>
+                    <button type="submit" >Enviar </button>
+                </div>
+
+            </form>
+
+            <div class="step-row">
+                <div id="progress"></div>
+                <div class="step-col"><small>step 1</small></div>
+                <div class="step-col"><small>step 2</small></div>
+                <div class="step-col"><small>step 3</small></div>
+            </div>
+
+        </div>
+
+        <script>
+            var form1 = document.getElementById("form1");
+            var form2 = document.getElementById("form2");
+            var form3 = document.getElementById("form3");
+    
+            var next1 = document.getElementById("next1");
+            var next2 = document.getElementById("next2");
+            var back1 = document.getElementById("back1");
+            var back2 = document.getElementById("back2");
+    
+            var progress = document.getElementById("progress");
+    
+            next1.onclick = function(){
+                form1.style.left = "-450px";
+                form2.style.left = "40px";
+                progress.style.width = "240px";
+            }
+            back1.onclick = function(){
+                form1.style.left = "40px";
+                form2.style.left = "450px";
+                progress.style.width = "120px";
+            }
+            next2.onclick = function(){
+                form2.style.left = "-450px";
+                form3.style.left = "40px";
+                progress.style.width = "360px";
+            }
+            back2.onclick = function(){
+                form2.style.left = "40px";
+                form3.style.left = "450px";
+                progress.style.width = "240px";
+            }
+    
+    
+        </script>
+
+        <!-- <form action="" >
             <fieldset class="formulario">
                 
                 <legend>Informacion de contacto</legend>
@@ -180,7 +268,7 @@
               
 
             </fieldset>
-        </form>
+        </form> -->
     </main>
 
     <footer>

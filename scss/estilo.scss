@@ -1,0 +1,527 @@
+@import "variables.scss";
+
+*{margin: 0; padding: 0;}
+
+header {
+    position: fixed;
+    width: 100%;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    z-index: 30;
+    #menu-nav{
+        
+    }
+    img {
+        width: 50px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------------------- HOME -----------------------*/
+@mixin banner ($banner-back, $banner-alto, $banner-aling,){
+    background-image: linear-gradient(rgba(37, 50, 55, 0.87), rgba(37, 50, 55, 0.822)), $banner-back;
+    height: $banner-alto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: $banner-aling;
+    background-attachment: fixed;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    color: $color1;
+}
+.slogan {
+
+    @include banner(url("../assets/background.logos/back.png"), 700px, flex-end,)
+   
+    
+    .slogan_texto{
+        border-left: 5px solid $color1;
+        
+
+       p {
+        color: $color1;
+        text-align: center;
+        font-size: $header-psize;
+        margin-right: 80px;
+        padding-left: 30px;
+        }
+        .size2 {font-size: $header-psize2;} 
+    }
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: $color5;
+}
+
+.home_parte1 {
+    padding: $mainpadding;
+    font-family: 'Barlow Condensed', sans-serif;
+
+    .home__parrafo {
+        font-size: $parrafo1;
+        font-weight: 15px;
+        text-align: justify;
+        padding: $parrafo1_padding;
+        line-height: $parrafo1_height;
+    }
+
+    .boton {
+        border: inset black;
+        margin: 70px auto;
+        text-align: center;
+        padding: 8px;
+        transition: 1s;
+        background-color: $color3;
+        border-radius: 5%;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+        a {text-decoration: none; color: $color1; font-size: 35px;
+        }
+    }
+
+    .boton:hover {
+        transform: scale (1.5, 1.5);
+        background-color: $color4;
+    
+      
+    }
+}
+
+@mixin servicio($servicio-color, $servicio-padding){
+    height: 300px;
+    width: 300px;
+    background-color: $servicio-color;
+    text-align: justify;
+    font-size: 25px;
+    line-height: 30px;
+    color: $color1;
+    margin: 7px;
+    padding: $servicio-padding;
+
+    img {width: 100%; height: 100%;}
+}
+.home_parte4 {
+    background-color: $color1;
+    width: 100%;
+    padding: $mainpadding;
+    font-family: 'Barlow Condensed', sans-serif;
+
+    
+
+    .home__servicio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+
+        .card1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .card2 { @include servicio(white, 0)}
+            .card3 { @include servicio($color5, 40px)}
+            .card4 { @include servicio($color3, 40px)}
+            .card5 { @include servicio($color4, 40px)}
+            
+        }
+    }
+/* 
+    .tarjetas {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0 100px 0;
+        flex-wrap: wrap;
+    
+        .card1 {
+            width: $cardwidth;
+            padding: 10px;
+            border: black;
+            background-color: #f2f2f2;
+            border-radius: 6%;
+            box-shadow: 0 0 6px 0 $color1;
+        
+            img {
+                height: $cardimg;
+                border-radius: 6%;
+                width: 100%;
+            }
+        
+            p {
+                font-size: 20px;
+                text-align: justify;
+                padding-top: 20px;
+            }
+        }
+    } */
+}
+
+.home_parte2{
+    padding: $mainpadding;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 60%;
+        height: auto;
+        margin-right: 50px;
+        border-radius: 7px;
+        box-shadow: 10px 5px 5px $color4;
+        
+    }
+    .requisitos {
+        width: 100%;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: $parrafo1;
+
+       .requisitos__item{
+           padding: 0 25px;
+           span {
+               margin: 0 10px 10px 0;
+               padding: 3px;
+               background-color: $color3;
+               border-radius: 50%;
+               width: 40px;
+               text-align: center;
+               color: $color1;
+               box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.658);
+               display: inline-block;
+           }
+       }
+
+       #pf1 {
+           background-color: $color5;
+           margin-top: 40px;
+           color: $color1;
+           font-size: 30px;
+           overflow: auto;
+       }
+    }
+}
+
+
+/* ----------------------- TAZAS -----------------------*/
+
+.prod__banner{
+    @include banner(url("../assets/background.logos/back.png"), 250px, center)
+}
+
+.prod__container{
+    padding: $mainpadding;
+
+    .prod__caja {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        
+
+        .prod__item {
+            width: 200px;
+            margin-bottom: 30px;
+            img{
+                height: 300px;
+                transition: 1s;
+            }
+            
+        }
+        .prod__item:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+        
+    }
+}
+
+/* ----------------------- COMPRA -----------------------*/
+
+.compra__container {
+    padding: $mainpadding;
+}
+.compra__producto{
+    display: flex;
+    margin-top: 150px;
+    font-family: 'Barlow Condensed', sans-serif;
+    justify-content: center;
+    align-items: flex-start;
+    
+
+    .compra__foto {
+        width: 500px;
+        padding-right: 100px;
+        
+    }
+    .compra__descripcion {
+        text-align: center;
+    }
+}
+
+
+/* ----------------------- CONTACTO -----------------------*/
+
+
+
+
+/* ----------------------- FOOTER -----------------------*/
+footer{
+
+    @include banner(url(../assets/background.logos/footer.png), 300px, center)
+    
+    font-size: $header-psize2;
+    
+
+    .footer__social {
+        margin-top: 20px;
+        display: flex; 
+        padding: 20px 180px;
+        border-top: 3px solid $color1;
+
+        .insta {height: 60px; width: 60px;}
+        .wpp {height: 60px; width: 60px; margin-left: 30px;}
+    }
+}
+
+
+/* ----------------------- MEDIA QUERIES -----------------------*/
+
+@media only screen and (max-width: 950px) {
+
+    @mixin servicio($servicio-color, $servicio-padding){
+        height: 250px;
+        width: 250px;
+        background-color: $servicio-color;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 25px;
+        color: $color1;
+        margin: 7px;
+        padding: $servicio-padding;
+    
+        img {width: 100%; height: 100%;}
+    }
+    .home_parte4 {
+        padding: 30px 20px;
+    
+        .home__servicio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px;
+    
+            .card1 {
+                display: flex;
+                .card2 { @include servicio(white, 0)}
+                .card3 { @include servicio($color5, 20px)}
+                .card4 { @include servicio($color3, 20px)}
+                .card5 { @include servicio($color4, 20px)}
+                
+            }
+        }
+    
+    }
+    .home_parte2{
+        padding: 30px 5px;
+
+        img {
+            width: 70%;
+            margin-bottom: 0 0 20px 0;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    @mixin servicio($servicio-color, $servicio-padding){
+        height: 200px;
+        width: 200px;
+        background-color: $servicio-color;
+        text-align: justify;
+        font-size: 15px;
+        line-height: 20px;
+        color: $color1;
+        margin: 7px;
+        padding: $servicio-padding;
+    
+        img {width: 100%; height: 100%;}
+    }
+    .home_parte4 {
+        padding: 30px 20px;
+    
+        .home__servicio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px;
+    
+            .card1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .card2 { @include servicio(white, 0)}
+                .card3 { @include servicio($color5, 20px)}
+                .card4 { @include servicio($color3, 20px)}
+                .card5 { @include servicio($color4, 20px)}
+                
+            }
+        }
+    
+    }
+    .home_parte2{
+        padding: 30px 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    
+        img {
+            width: 100%;
+            margin-bottom: 0 0 20px 0;
+        }
+    }
+
+}
+@media only screen and (max-width: 600px) {
+
+    .home_parte1 {
+        padding: 30px 5px;
+    
+        .home__parrafo {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 25px;
+        }
+    
+        .boton {
+          
+            a {font-size: 25px;
+            }
+        }
+    }
+    
+
+    .prod__caja {
+
+        .prod__item {
+
+            img{
+                height: 100px;
+                transition: 1s;
+            }
+            
+        }
+        
+    }
+    .home_parte2{
+        padding: 30px 5px;
+        flex-direction: column;
+        align-items: center;
+    
+        img {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+    @mixin servicio($servicio-color, $servicio-padding){
+        height: 200px;
+        width: 200px;
+        background-color: $servicio-color;
+        text-align: justify;
+        font-size: 15px;
+        line-height: 30px;
+        color: $color1;
+        margin: 7px;
+        padding: $servicio-padding;
+    
+        img {width: 100%; height: 100%;}
+    }
+    .home_parte4 {
+        padding: 30px 5px;
+
+        .home__servicio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            .card1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .card2 { @include servicio(white, 0)}
+                .card3 { @include servicio($color5, 40px)}
+                .card4 { @include servicio($color3, 40px)}
+                .card5 { @include servicio($color4, 40px)}
+                
+            }
+        }
+    
+    }
+    .prod__container{
+        padding: 30px 5px;
+    
+        .prod__caja {
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+    
+            .prod__item {
+                width: 200px;
+                margin-bottom: 30px;
+                img{
+                    height: auto;
+                    transition: 1s;
+                }
+                
+            }
+            .prod__item:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+            
+        }
+    }
+    .compra__producto{
+        
+        flex-direction: column;
+        margin-top: 90px;
+        justify-content: center;
+        align-items: flex-start;
+        
+    
+        .compra__foto {
+            width: 100%;
+            padding: 0;
+            
+        }
+        .compra__descripcion {
+            text-align: center;
+            width: 100%;
+        }
+    }
+}

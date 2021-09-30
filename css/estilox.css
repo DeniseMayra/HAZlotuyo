@@ -13,10 +13,11 @@ img { max-width: 100%; max-height: 100%;}
     position: relative;
 }
 header {
-    background-image: linear-gradient(rgba(70, 102, 109, 0.295), rgba(186, 222, 245, 0.404)) ,url("../assets/background.logos/header.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.582), rgba(42, 44, 46, 0.575)) ,url("../assets/background.logos/back.png");
     background-position: center;
-    background-size: contain;
-    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
     font-family: 'Barlow Condensed', sans-serif;
     
 }
