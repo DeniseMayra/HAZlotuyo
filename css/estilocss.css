@@ -80,35 +80,7 @@ h1 {
   background-color: #e0fbfc;
   width: 100%;
   padding: 50px 70px;
-  font-family: 'Barlow Condensed', sans-serif;
-  /* 
-    .tarjetas {
-        display: flex;
-        justify-content: space-between;
-        padding: 50px 0 100px 0;
-        flex-wrap: wrap;
-    
-        .card1 {
-            width: $cardwidth;
-            padding: 10px;
-            border: black;
-            background-color: #f2f2f2;
-            border-radius: 6%;
-            box-shadow: 0 0 6px 0 $color1;
-        
-            img {
-                height: $cardimg;
-                border-radius: 6%;
-                width: 100%;
-            }
-        
-            p {
-                font-size: 20px;
-                text-align: justify;
-                padding-top: 20px;
-            }
-        }
-    } */ }
+  font-family: 'Barlow Condensed', sans-serif; }
   .home_parte4 .home__servicio {
     display: flex;
     align-items: center;
@@ -259,6 +231,77 @@ h1 {
     text-align: center; }
 
 /* ----------------------- CONTACTO -----------------------*/
+h4 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #253237; }
+
+.contacto__fondo {
+  background-color: #9db4c0; }
+
+.contacto__container {
+  width: 360px;
+  height: 600px;
+  margin: 0 auto 300px auto;
+  padding-top: 100px;
+  background-color: #e0fbfc;
+  position: relative;
+  overflow: hidden; }
+  .contacto__container form {
+    width: 280px;
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    transition: 0.4s;
+    font-family: 'Barlow Condensed', sans-serif; }
+    .contacto__container form input {
+      width: 100%;
+      padding: 10px 5px;
+      margin: 5px 0;
+      border: 0;
+      border-bottom: 1px solid #5c6b73;
+      outline: none;
+      background: transparent; }
+    .contacto__container form .boton-box {
+      width: 100%;
+      margin: 30px auto;
+      text-align: center; }
+  .contacto__container button {
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: #253237;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #e0fbfc;
+    cursor: pointer; }
+  .contacto__container #form2 {
+    left: 450px; }
+  .contacto__container #form3 {
+    left: -450px; }
+    .contacto__container #form3 .comentarios {
+      overflow: scroll; }
+  .contacto__container .step-row {
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative; }
+  .contacto__container .step-col {
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative; }
+  .contacto__container #progress {
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to right, #9db4c0, #5c6b73);
+    transition: 2s; }
+
 /* ----------------------- FOOTER -----------------------*/
 footer {
   background-image: linear-gradient(rgba(37, 50, 55, 0.87), rgba(37, 50, 55, 0.822)), url(../assets/background.logos/footer.png);
