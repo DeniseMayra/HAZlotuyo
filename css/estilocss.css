@@ -66,7 +66,7 @@ h3 {
     line-height: 25px; }
 
 .home_parte4 {
-  background-color: #e0fbfc;
+  background-color: rgba(157, 180, 192, 0.397);
   width: 100%;
   padding: 50px 70px;
   font-family: 'Barlow Condensed', sans-serif; }
@@ -89,7 +89,7 @@ h3 {
       .home_parte4 .home__servicio .card1 .card2 {
         height: 300px;
         width: 300px;
-        background-color: white;
+        background-color: #253237;
         text-align: justify;
         font-size: 25px;
         line-height: 30px;
@@ -98,7 +98,8 @@ h3 {
         padding: 0; }
         .home_parte4 .home__servicio .card1 .card2 img {
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          opacity: 0.7; }
       .home_parte4 .home__servicio .card1 .card3 {
         height: 300px;
         width: 300px;
@@ -111,7 +112,8 @@ h3 {
         padding: 40px; }
         .home_parte4 .home__servicio .card1 .card3 img {
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          opacity: 0.7; }
       .home_parte4 .home__servicio .card1 .card4 {
         height: 300px;
         width: 300px;
@@ -124,7 +126,8 @@ h3 {
         padding: 40px; }
         .home_parte4 .home__servicio .card1 .card4 img {
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          opacity: 0.7; }
       .home_parte4 .home__servicio .card1 .card5 {
         height: 300px;
         width: 300px;
@@ -137,7 +140,8 @@ h3 {
         padding: 40px; }
         .home_parte4 .home__servicio .card1 .card5 img {
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          opacity: 0.7; }
 
 .home_parte2 {
   padding: 50px 70px;
@@ -223,48 +227,30 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  overflow: hidden;
-  /* .prod__caja {
-        overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        
-
-        .prod__item {
-            width: 15rem;
-            margin-bottom: 30px;
-            img{
-                height: 300px;
-                transition: 1s;
-            }
-            
-        }
-        .prod__item:hover {
-            img {
-                transform: scale(1.2);
-            }
-        }
-        
-    } */ }
-  .prod__container .prod__imagencontain {
-    overflow: hidden; }
-    .prod__container .prod__imagencontain img {
-      transition: 1s; }
-  .prod__container .prod__imagencontain:hover img {
-    transform: scale(1.2); }
+  overflow: hidden; }
+  .prod__container #prod__card {
+    margin: 20px 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center; }
+    .prod__container #prod__card .prod__imagencontain {
+      overflow: hidden; }
+      .prod__container #prod__card .prod__imagencontain img {
+        transition: 1s; }
+    .prod__container #prod__card .prod__imagencontain:hover img {
+      transform: scale(1.2); }
 
 /* ----------------------- COMPRA -----------------------*/
 .compra__container {
-  padding: 50px 70px; }
+  padding: 50px 0; }
   .compra__container .compra__producto {
     display: flex;
-    margin-top: 150px;
+    margin: 150px 0 100px 0;
     font-family: 'Barlow Condensed', sans-serif;
     justify-content: center;
-    align-items: flex-start; }
+    align-items: flex-start;
+    padding: 0 70px; }
     .compra__container .compra__producto .compra__foto {
       width: 500px;
       padding-right: 100px; }
@@ -277,7 +263,11 @@ h3 {
       .compra__container .compra__producto .compra__descripcion form .boton__compra {
         margin-top: 50px; }
   .compra__container .compra__envio {
-    margin-top: 30px; }
+    margin-top: 30px;
+    padding: 0 70px 30px 70px;
+    background-color: rgba(157, 180, 192, 0.397);
+    font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif; }
     .compra__container .compra__envio h3 {
       text-align: center;
       color: #253237;
@@ -285,6 +275,36 @@ h3 {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
       text-transform: uppercase; }
+    .compra__container .compra__envio .envio__item {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: justify;
+      margin-top: 20px; }
+      .compra__container .compra__envio .envio__item .envio__form {
+        width: 50%;
+        display: flex;
+        flex-direction: column; }
+        .compra__container .compra__envio .envio__item .envio__form input {
+          margin: 5px 50px;
+          border: 0;
+          border-bottom: 1px solid #5c6b73;
+          background: transparent; }
+        .compra__container .compra__envio .envio__item .envio__form .envio__form--boton {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 10px; }
+          .compra__container .compra__envio .envio__item .envio__form .envio__form--boton input {
+            background-color: #253237;
+            border: none;
+            color: #c2dfe3;
+            padding: 2px 20px;
+            border-radius: 20px; }
+      .compra__container .compra__envio .envio__item .envio__mapa {
+        width: 45%;
+        height: 500px;
+        overflow: hidden;
+        margin-left: 20px; }
   .compra__container .compra__relacionado {
     margin-top: 30px; }
     .compra__container .compra__relacionado h3 {
@@ -293,11 +313,19 @@ h3 {
       font-size: 55px;
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-bottom: 20px; }
     .compra__container .compra__relacionado .relacionado--item {
       display: flex;
       overflow-x: scroll;
-      justify-content: space-between; }
+      justify-content: space-evenly;
+      margin-top: 20px; }
+      .compra__container .compra__relacionado .relacionado--item #prod__card {
+        margin: 20px 10px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        text-align: center; }
 
 /* ----------------------- CONTACTO -----------------------*/
 .contacto__fondo {
@@ -414,7 +442,7 @@ footer {
         .home_parte4 .home__servicio .card1 .card2 {
           height: 250px;
           width: 250px;
-          background-color: white;
+          background-color: #253237;
           text-align: justify;
           font-size: 20px;
           line-height: 25px;
@@ -467,7 +495,11 @@ footer {
     padding: 30px 5px; }
     .home_parte2 img {
       width: 350px;
-      margin-bottom: 0 0 20px 0; } }
+      margin-bottom: 0 0 20px 0; }
+  .prod__container {
+    padding: 40px 20px; }
+    .prod__container #prod__card {
+      margin: 10px; } }
 
 @media only screen and (max-width: 768px) {
   .home_parte4 {
@@ -485,7 +517,7 @@ footer {
         .home_parte4 .home__servicio .card1 .card2 {
           height: 200px;
           width: 200px;
-          background-color: white;
+          background-color: #253237;
           text-align: justify;
           font-size: 15px;
           line-height: 20px;
@@ -614,7 +646,7 @@ footer {
         .home_parte4 .home__servicio .card1 .card2 {
           height: 200px;
           width: 200px;
-          background-color: white;
+          background-color: #253237;
           text-align: justify;
           font-size: 15px;
           line-height: 30px;
@@ -699,8 +731,23 @@ footer {
           font-size: 30px; }
         .compra__container .compra__producto .compra__descripcion form .boton__compra {
           margin-top: 50px; }
-    .compra__container .compra__envio h3 {
-      font-size: 30px; }
+    .compra__container .compra__envio {
+      margin-top: 30px;
+      padding: 0 30px 20px 30px; }
+      .compra__container .compra__envio h3 {
+        font-size: 30px; }
+      .compra__container .compra__envio .envio__item {
+        flex-direction: column; }
+        .compra__container .compra__envio .envio__item .envio__form {
+          width: 100%; }
+          .compra__container .compra__envio .envio__item .envio__form input {
+            margin: 5px 50px; }
+        .compra__container .compra__envio .envio__item .envio__mapa {
+          width: 100%;
+          height: 250px;
+          overflow: hidden;
+          margin-left: 0;
+          margin-top: 20px; }
     .compra__container .compra__relacionado h3 {
       font-size: 30px; } }
 
@@ -745,7 +792,7 @@ footer {
         .home_parte4 .home__servicio .card1 .card2 {
           height: 150px;
           width: 150px;
-          background-color: white;
+          background-color: #253237;
           text-align: justify;
           font-size: 15px;
           line-height: 20px;
@@ -795,27 +842,51 @@ footer {
             width: 100%;
             height: 100%; }
   .compra__container {
-    padding: 30px 5px; }
+    padding: 50px 0; }
     .compra__container .compra__producto {
       display: flex;
-      flex-direction: column;
-      margin-top: 0;
-      font-family: 'Barlow Condensed', sans-serif;
-      justify-content: center;
-      align-items: center; }
+      margin: 20px 0 50px 0;
+      padding: 0 3px;
+      flex-direction: column; }
       .compra__container .compra__producto .compra__foto {
         width: 100%;
-        padding-right: 0;
-        margin-top: 60px; }
-      .compra__container .compra__producto .compra__descripcion {
-        text-align: center; }
-        .compra__container .compra__producto .compra__descripcion .compra-precio {
-          font-size: 50px; }
-        .compra__container .compra__producto .compra__descripcion h1 {
-          font-size: 30px; }
-        .compra__container .compra__producto .compra__descripcion form .boton__compra {
-          margin-top: 50px; }
-    .compra__container .compra__envio h3 {
-      font-size: 30px; }
-    .compra__container .compra__relacionado h3 {
-      font-size: 30px; } }
+        padding-right: 0; }
+      .compra__container .compra__producto .compra__descripcion .compra-precio {
+        font-size: 50px; }
+      .compra__container .compra__producto .compra__descripcion h1 {
+        margin-top: 10px;
+        font-size: 30px; }
+      .compra__container .compra__producto .compra__descripcion form .boton__compra {
+        margin-top: 30px; }
+    .compra__container .compra__envio {
+      margin-top: 30px;
+      padding: 0 5px 20px 5px;
+      font-size: 20px; }
+      .compra__container .compra__envio h3 {
+        font-size: 40px; }
+      .compra__container .compra__envio .envio__item {
+        margin-top: 20px;
+        flex-direction: column; }
+        .compra__container .compra__envio .envio__item .envio__form {
+          width: 97%; }
+        .compra__container .compra__envio .envio__item .envio__mapa {
+          width: 100%;
+          height: 250px;
+          overflow: hidden;
+          margin-left: 0; }
+    .compra__container .compra__relacionado {
+      margin-top: 30px; }
+      .compra__container .compra__relacionado h3 {
+        font-size: 30px;
+        margin-bottom: 15px; }
+      .compra__container .compra__relacionado .relacionado--item {
+        display: flex;
+        overflow-x: scroll;
+        justify-content: space-evenly;
+        margin-top: 20px; }
+        .compra__container .compra__relacionado .relacionado--item #prod__card {
+          margin: 10px 5px;
+          font-family: 'Barlow Condensed', sans-serif;
+          font-weight: 800;
+          font-size: 15px;
+          text-align: center; } }

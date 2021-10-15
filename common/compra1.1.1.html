@@ -34,7 +34,7 @@
         
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark"">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/background.logos/logoblanco.PNG" alt="Logotipo HAZ lo Tuyo" ></a>
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/background.logos/logoblanco.png" alt="Logotipo HAZ lo Tuyo" ></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -112,14 +112,66 @@
         
         <section class="compra__envio">
             <h3>Formas de envío </h3>
-            
+            <div class="envio__item">
+                
+                <form action="" class="envio__form">
+                        <p>Ingrese la información necesaria para la cotización del envio, en breve nos estaremos contactando por Email.</p>
+                        <p>También podés retirar en persona.</p>
+
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="text" placeholder="Email" required>
+                        <input type="text" placeholder="Provincia" required>
+                        <input type="text" placeholder="Código Postal" required>
+                        <input type="text" placeholder="Localidad">
+                        <input type="text" placeholder="Dirección">
+
+                        <div class="envio__form--boton">
+                            <input type="submit" name="" id="" value="Enviar">
+                            <input type="reset" name="" id="" value="Ingresar nuevamente">
+         
+                        </div>
+
+                </form>
+                
+                <div class="envio__mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.675046957405!2d-58.542859426103064!3d-34.56188827027175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb76908f02655%3A0xb8cfcac6fac33f42!2sSan%20Andr%C3%A9s!5e0!3m2!1ses-419!2sar!4v1634318446291!5m2!1ses-419!2sar" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
         </section>
 
         
        
         <div class="compra__relacionado"> 
             <h3>También te puede interesar</h3>
-            <!-- fotos con link para otros productos -->
+            <div class="relacionado--item">
+                <div class="card" style="width: 18rem;" id="prod__card">
+                    <a href="./compra1.1.4.html"><img src="../assets/tazas/mama1.3.png" class="card-img-top" alt="Taza para el Dia de la Madre"></a>
+                
+                    <div class="card-body">
+                        <p class="card-text">Taza para el Dia de la Madre</p>
+                        <p>$600</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;" id="prod__card">
+                    <a href="./compra1.1.2.html"><img src="../assets/tazas/dragon2.1.png" class="card-img-top" alt="Taza de Dragon Ball"></a>
+                
+                    <div class="card-body">
+                        <p class="card-text">Taza de Dragon Ball Z</p>
+                        <p>$600</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;" id="prod__card">
+                    <a href="./compra1.1.3.html"><img src="../assets/tazas/velez1.2.png" class="card-img-top" alt="Taza de Velez Sarfield"></a>
+                
+                    <div class="card-body">
+                        <p class="card-text">Taza de Velez Sarfield</p>
+                        <p>$600</p>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 

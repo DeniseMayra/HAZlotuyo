@@ -101,10 +101,10 @@ h3 {
     margin: 7px;
     padding: $servicio-padding;
 
-    img {width: 100%; height: 100%;}
+    img {width: 100%; height: 100%; opacity: 0.7;}
 }
 .home_parte4 {
-    background-color: $color1;
+    background-color: rgba(157, 180, 192, 0.397);
     width: 100%;
     padding: $mainpadding;
     font-family: 'Barlow Condensed', sans-serif;
@@ -127,7 +127,7 @@ h3 {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            .card2 { @include servicio(white, 0)}
+            .card2 { @include servicio($color5, 0)}
             .card3 { @include servicio($color5, 40px)}
             .card4 { @include servicio($color3, 40px)}
             .card5 { @include servicio($color4, 40px)}
@@ -228,55 +228,36 @@ h3 {
     flex-wrap: wrap;
     overflow: hidden;
 
+    #prod__card{
+        margin: 20px 10px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        text-align: center;
 
-
-    .prod__imagencontain {
-        overflow: hidden;
-        img { transition: 1s;}
-    }
-    .prod__imagencontain:hover {
-        img { transform: scale(1.2);}
-    }
-
-    /* .prod__caja {
-        overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        
-
-        .prod__item {
-            width: 15rem;
-            margin-bottom: 30px;
-            img{
-                height: 300px;
-                transition: 1s;
-            }
-            
+        .prod__imagencontain {
+            overflow: hidden;
+            img { transition: 1s;}
         }
-        .prod__item:hover {
-            img {
-                transform: scale(1.2);
-            }
+        .prod__imagencontain:hover {
+            img { transform: scale(1.2);}
         }
-        
-    } */
+    }
+
 }
 
 /* ----------------------- COMPRA -----------------------*/
 
 .compra__container {
-    padding: $mainpadding;
+    padding: 50px 0;
 
     .compra__producto{
         display: flex;
-        margin-top: 150px;
+        margin: 150px 0 100px 0;
         font-family: 'Barlow Condensed', sans-serif;
         justify-content: center;
         align-items: flex-start;
-    
+        padding: 0 70px;
 
         .compra__foto {
             width: 500px;
@@ -302,6 +283,11 @@ h3 {
 
     .compra__envio {
         margin-top: 30px;
+        padding: 0 70px 30px 70px;
+        background-color: rgba(157, 180, 192, 0.397);
+        font-size: 20px;
+        font-family: 'Barlow Condensed', sans-serif;
+        
         h3 {
             text-align: center;
             color: $color5;
@@ -310,6 +296,45 @@ h3 {
             font-weight: 800;
             text-transform: uppercase;
         }
+        .envio__item{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: justify;
+            margin-top: 20px;
+
+            .envio__form{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                
+                input{
+                    margin: 5px 50px;
+                    border: 0;
+                    border-bottom: 1px solid $color4;
+                    background: transparent;
+                }
+                .envio__form--boton{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin-top: 10px;
+                    input{
+                        background-color: $color5;
+                        border: none;
+                        color: $color2;
+                        padding: 2px 20px;
+                        border-radius: 20px;
+                    }
+                }
+            }
+            .envio__mapa{
+                width: 45%;
+                height: 500px;
+                overflow: hidden;
+                margin-left: 20px;
+            }
+        }
+
     }
     .compra__relacionado {
         margin-top: 30px;
@@ -320,12 +345,24 @@ h3 {
             font-family: 'Barlow Condensed', sans-serif;
             font-weight: 800;
             text-transform: uppercase;
+            margin-bottom: 20px;
         }
 
         .relacionado--item {
             display: flex;
             overflow-x: scroll;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            margin-top: 20px;
+
+            #prod__card{
+                margin: 20px 10px;
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 800;
+                font-size: 20px;
+                text-align: center;
+        
+                
+            }
         }
     }
 
@@ -472,7 +509,7 @@ footer{
     
             .card1 {
                 display: flex;
-                .card2 { @include servicio(white, 0)}
+                .card2 { @include servicio($color5, 0)}
                 .card3 { @include servicio($color5, 20px)}
                 .card4 { @include servicio($color3, 20px)}
                 .card5 { @include servicio($color4, 20px)}
@@ -488,6 +525,15 @@ footer{
             width: 350px;
             margin-bottom: 0 0 20px 0;
         }
+    }
+
+    .prod__container{
+        padding: 40px 20px;
+    
+        #prod__card{
+            margin: 10px;
+        }
+    
     }
 }
 
@@ -520,7 +566,7 @@ footer{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                .card2 { @include servicio(white, 0)}
+                .card2 { @include servicio($color5, 0)}
                 .card3 { @include servicio($color5, 20px)}
                 .card4 { @include servicio($color3, 20px)}
                 .card5 { @include servicio($color4, 20px)}
@@ -586,6 +632,7 @@ footer{
     
     }
 
+
 }
 @media only screen and (max-width: 600px) {
 
@@ -647,6 +694,8 @@ footer{
             }
     
         }
+
+        
     }
 
     @mixin servicio($servicio-color, $servicio-padding){
@@ -680,7 +729,7 @@ footer{
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                .card2 { @include servicio(white, 0)}
+                .card2 { @include servicio($color5, 0)}
                 .card3 { @include servicio($color5, 20px)}
                 .card4 { @include servicio($color3, 20px)}
                 .card5 { @include servicio($color4, 20px)}
@@ -752,9 +801,33 @@ footer{
         }
     
         .compra__envio {
+            margin-top: 30px;
+            padding: 0 30px 20px 30px;
+            
             h3 {
                 font-size: 30px;
+                
             }
+            .envio__item{
+                flex-direction: column;
+    
+                .envio__form{
+                    width: 100%;
+                    
+                    input{
+                        margin: 5px 50px;
+                    }
+                    
+                }
+                .envio__mapa{
+                    width: 100%;
+                    height: 250px;
+                    overflow: hidden;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            }
+    
         }
         .compra__relacionado {
     
@@ -821,7 +894,7 @@ footer{
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                .card2 { @include servicio(white, 0)}
+                .card2 { @include servicio($color5, 0)}
                 .card3 { @include servicio($color5, 5px)}
                 .card4 { @include servicio($color3, 5px)}
                 .card5 { @include servicio($color4, 5px)}
@@ -832,48 +905,82 @@ footer{
     }
    
     .compra__container {
-        padding: 30px 5px;
+        padding: 50px 0;
     
         .compra__producto{
             display: flex;
+            margin: 20px 0 50px 0;
+            padding: 0 3px;
             flex-direction: column;
-            margin-top: 0;
-            font-family: 'Barlow Condensed', sans-serif;
-            justify-content: center;
-            align-items: center;
-        
     
             .compra__foto {
                 width: 100%;
                 padding-right: 0;
-                margin-top: 60px;
+            
             }
             .compra__descripcion {
-                text-align: center;
     
                 .compra-precio {
                     font-size: 50px;
                 }
                 h1 {
+                    margin-top: 10px;
                     font-size: 30px;
                 }
                 form {
                     .boton__compra{
-                        margin-top: 50px;
+                        margin-top: 30px;
                     }
                 }
             }
         }
     
         .compra__envio {
+            margin-top: 30px;
+            padding: 0 5px 20px 5px;
+            font-size: 20px;
+            
             h3 {
-                font-size: 30px;
+                font-size: 40px;
             }
+            .envio__item{
+                margin-top: 20px;
+                flex-direction: column;
+    
+                .envio__form{
+                    width: 97%;
+                }
+                .envio__mapa{
+                    width: 100%;
+                    height: 250px;
+                    overflow: hidden;
+                    margin-left: 0;
+                }
+            }
+    
         }
         .compra__relacionado {
-    
+            margin-top: 30px;
             h3 {
                 font-size: 30px;
+                margin-bottom: 15px;
+            }
+    
+            .relacionado--item {
+                display: flex;
+                overflow-x: scroll;
+                justify-content: space-evenly;
+                margin-top: 20px;
+    
+                #prod__card{
+                    margin: 10px 5px;
+                    font-family: 'Barlow Condensed', sans-serif;
+                    font-weight: 800;
+                    font-size: 15px;
+                    text-align: center;
+            
+                    
+                }
             }
         }
     
