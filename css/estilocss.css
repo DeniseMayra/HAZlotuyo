@@ -413,8 +413,9 @@ footer {
   color: #e0fbfc;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
-  text-align: center;
-  font-size: 55px; }
+  text-align: center; }
+  footer p {
+    font-size: 55px; }
   footer .footer__social {
     margin-top: 20px;
     display: flex;
@@ -593,7 +594,9 @@ footer {
     .compra__container .compra__envio h3 {
       font-size: 40px; }
     .compra__container .compra__relacionado h3 {
-      font-size: 40px; } }
+      font-size: 40px; }
+  footer p {
+    font-size: 45px; } }
 
 @media only screen and (max-width: 600px) {
   .home_parte1 {
@@ -889,4 +892,6 @@ footer {
           font-family: 'Barlow Condensed', sans-serif;
           font-weight: 800;
           font-size: 15px;
-          text-align: center; } }
+          text-align: center; }
+  footer p {
+    font-size: 35px; } }

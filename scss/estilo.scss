@@ -8,9 +8,7 @@ header {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 20px;
     z-index: 30;
-    #menu-nav{
-        
-    }
+    
     img {
         width: 50px;
     }
@@ -466,8 +464,10 @@ footer{
 
     @include banner(url(../assets/background.logos/footer.png), 300px, center)
     
-    font-size: $header-psize2;
     
+    p{
+        font-size: $header-psize2;
+    }
 
     .footer__social {
         margin-top: 20px;
@@ -630,6 +630,15 @@ footer{
             }
         }
     
+    }
+
+    footer{
+
+        p {
+            font-size: 45px;
+        }
+    
+       
     }
 
 
@@ -984,5 +993,14 @@ footer{
             }
         }
     
+    }
+
+    footer{
+
+        p {
+            font-size: 35px;
+        }
+    
+       
     }
 }
