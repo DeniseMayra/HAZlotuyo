@@ -161,3 +161,93 @@
     
 </body>
 </html>
+
+<!-- 
+import React, { Fragment } from "react";
+import {NavBar,Nav,NavDropdown, Container} from 'react-bootstrap'
+
+const NavBar = () => {
+
+    return(
+        <Fragment>
+            <div>
+            <Navbar bg="dark" expand="lg" sticky-top>
+    <Container>
+        <Navbar.Brand href="#home"><img src={logo} alt="" /></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#link">Contacto</Nav.Link>
+                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">Productos</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">Tazas</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">Tazas Personalizadas</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Indumentaria</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4">Diseños</NavDropdown.Item>
+                </NavDropdown>
+            </Nav>
+        </Navbar.Collapse>
+    </Container>
+</Navbar> 
+
+            </div>
+        </Fragment>
+    )
+}
+export default NavBar;  
+
+
+import React, { Fragment } from "react";
+import logo from'../assets/LogoTipo.png'
+
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const NavBar = () => {
+
+    const NavStyle = {
+        display:"flex",
+        height:110,
+        paddingTop:10,
+        paddingLeft:30,
+        backgroundColor: "#343a40",
+        alingItems:"center",
+        
+    }    
+    const Logo = {
+        height:100,
+    }
+    const List = {
+        display: "flex",
+        paddingLeft: 20,
+        listStyleType: "none",
+        alingItems:"center",
+        justifyContent:"center",
+    }
+    const Link= {
+        textDecoration:"none",
+        paddingLeft:15,
+        color:"white",
+    }
+
+
+    return(
+        <Fragment>
+            <div style={NavStyle}>
+                <a href="#"><img src={logo} alt="Logo Bella y Natural" style={Logo}/></a>
+                <ul style={List}>
+                    <li><a href="#" style={Link}>Home</a></li>
+                    <li><a href="#" style={Link}>Productos </a></li>
+                    <li><a href="#" style={Link}>Contacto</a></li>
+                </ul>
+
+            </div>
+            <Button variant="outline-dark">Dark</Button>
+        </Fragment>
+    )
+}
+
+export default NavBar;
+-->

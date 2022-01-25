@@ -30,6 +30,9 @@ h3 {
     font-weight: 800;
     text-transform: uppercase;
 } */
+#cart {
+  margin-right: 20px; }
+
 /* ----------------------- HOME -----------------------*/
 .slogan {
   background-image: linear-gradient(rgba(37, 50, 55, 0.87), rgba(37, 50, 55, 0.822)), url("../assets/background.logos/back.png");
@@ -202,7 +205,7 @@ h3 {
       background-color: #5c6b73; }
 
 /* ----------------------- PRODUCTOS -----------------------*/
-.prod__banner {
+.taza__banner {
   background-image: linear-gradient(rgba(37, 50, 55, 0.87), rgba(37, 50, 55, 0.822)), url("../assets/background.logos/back.png");
   height: 250px;
   width: 100%;
@@ -218,8 +221,28 @@ h3 {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
   text-align: center; }
-  .prod__banner h1 {
+  .taza__banner h1 {
+    margin-top: 90px;
     font-size: 55px; }
+
+.separador {
+  border-top: 3px solid #9db4c0;
+  margin: 0 50px;
+  font-size: 45px;
+  text-align: center;
+  color: #253237;
+  font-family: 'Barlow Condensed', sans-serif; }
+
+#prod_navegador {
+  padding: 5px 0 10px 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: #212529; }
+  #prod_navegador a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #e0fbfc; }
 
 .prod__container {
   padding: 50px 70px;
@@ -227,19 +250,28 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  overflow: hidden; }
-  .prod__container #prod__card {
-    margin: 20px 10px;
+  overflow: hidden;
+  /*  .prod__card{
+        margin: 20px 10px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        text-align: center;
+
+          EJEMPLO IMAGEN PARA INDEX  --------------------- 
+        .prod__imagencontain {
+            overflow: hidden;
+            img { transition: 1s;}
+        }
+        .prod__imagencontain:hover {
+            img { transform: scale(1.2);}
+        } 
+    } */ }
+  .prod__container .item__descripcion {
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
     font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    text-align: center; }
-    .prod__container #prod__card .prod__imagencontain {
-      overflow: hidden; }
-      .prod__container #prod__card .prod__imagencontain img {
-        transition: 1s; }
-    .prod__container #prod__card .prod__imagencontain:hover img {
-      transform: scale(1.2); }
+    margin-top: 30px; }
 
 /* ----------------------- COMPRA -----------------------*/
 .compra__container {

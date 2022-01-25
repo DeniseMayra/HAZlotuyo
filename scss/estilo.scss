@@ -35,6 +35,10 @@ h3 {
     text-transform: uppercase;
 } */
 
+#cart{
+    margin-right: 20px;
+}
+
 
 /* ----------------------- HOME -----------------------*/
 @mixin banner ($banner-back, $banner-alto, $banner-aling,){
@@ -210,15 +214,39 @@ h3 {
 
 /* ----------------------- PRODUCTOS -----------------------*/
 
-.prod__banner{
+.taza__banner{
     @include banner(url("../assets/background.logos/back.png"), 250px, center)
 
     h1 {
+        margin-top: 90px;
         font-size: $header-psize2;
     }
+    
 }
 
-.prod__container{
+.separador{
+    border-top: 3px solid $color3;
+    margin: 0 50px;
+    font-size: 45px;
+    text-align: center;
+    color: $color5;
+    font-family:  'Barlow Condensed', sans-serif;
+}
+
+#prod_navegador{
+    padding: 5px 0 10px 0;
+    list-style-type: none;   
+    display: flex;
+    justify-content: center;
+    background-color: #212529;
+
+    a{
+        text-decoration: none;
+        margin: 0 10px;
+        color: $color1;
+    }     
+}
+#prod__container{
     padding: $mainpadding;
     display: flex;
     justify-content: space-evenly;
@@ -226,21 +254,29 @@ h3 {
     flex-wrap: wrap;
     overflow: hidden;
 
-    #prod__card{
+    .item__descripcion{
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,.5);
+        font-family: 'Barlow Condensed', sans-serif;
+        margin-top: 30px;
+    }
+
+   /*  .prod__card{
         margin: 20px 10px;
         font-family: 'Barlow Condensed', sans-serif;
         font-weight: 800;
         font-size: 20px;
         text-align: center;
 
+          EJEMPLO IMAGEN PARA INDEX  --------------------- 
         .prod__imagencontain {
             overflow: hidden;
             img { transition: 1s;}
         }
         .prod__imagencontain:hover {
             img { transform: scale(1.2);}
-        }
-    }
+        } 
+    } */
 
 }
 
