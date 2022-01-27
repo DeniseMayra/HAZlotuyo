@@ -27,14 +27,16 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> 
     
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
        
         
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="ProductNav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/background.logos/logoblanco.png" alt="Logotipo HAZ lo Tuyo" ></a>
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/background.logos/logoBlanco.png" alt="Logotipo HAZ lo Tuyo" ></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -45,20 +47,44 @@
                             <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tazas.html">Tazas </a>
+                            <a class="nav-link" href="./tazas.html">Tazas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="indumentaria.html">Indumentaria </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto </a>
+                            <a class="nav-link" href="./indumentaria.html">Indumentaria</a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <img src="../assets/background.logos/carrito.png" alt="Logo de Carrito" id="cartImg">
         </nav>
-
-
+        
+                
+        <div id="cartInfo">
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"></th>
+                        <th scope="col">producto</th>
+                        <th scope="col">material</th>
+                        <th scope="col">precio</th>
+                        <th scope="col">cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                    
+                </tbody>
+            </table>
+            <div class="row mx-4">
+                <div class="col Total">
+                    <p>Total:  $<div id="cartTotal"></div></p>
+                </div>
+                <div class="col d-flex justify content-end">
+                    <button id="buyButon">Comprar </button>
+                </div>
+            </div>
+        </div>
+        
     </header>
 
     <main>
@@ -68,67 +94,14 @@
         </section>
 
         
-        <section class="prod__container">
-            
-            <div class="card" style="width: 15rem;" id="prod__card">
-                <div class="prod__imagencontain">
-                    <img src="../assets/indumentaria/buzo1.1.png" class="card-img-top" alt="Buzo Dibujo de Chica">
-                </div>
-                 <div class="card-body" >
-                  <h5 class="card-title">Buzo con diseño de nena </h5>
-                  <p class="card-text">$1200</p>
-                  <a href="./compra2.2.1.html" class="btn btn-dark">Comprar</a>
-                </div>
-            </div>
-            
-            <div class="card" style="width: 15rem;" id="prod__card">
-                <div class="prod__imagencontain">
-                    <img src="../assets/indumentaria/buzo2.1.png" class="card-img-top" alt="Buzo de Naruto">
-                </div>
-                 <div class="card-body" >
-                  <h5 class="card-title">Buzo con diseño de Naruto </h5>
-                  <p class="card-text">$1300</p>
-                  <a href="./compra2.2.2.html" class="btn btn-dark">Comprar</a>
-                </div>
-            </div>
+        <section id="prod_tshirts" class="prod__container" > </section>
+        <div class="separador">Invierno</div> 
 
-            <div class="card" style="width: 15rem;" id="prod__card">
-                <div class="prod__imagencontain">
-                    <img src="../assets/indumentaria/musc1.1.png" class="card-img-top" alt="Musculosa HAZloTuyo">
-                </div>
-                 <div class="card-body" >
-                  <h5 class="card-title">Musculosa original de HAZ lo Tuyo </h5>
-                  <p class="card-text">$700</p>
-                  <a href="./compra.2.1.1.html" class="btn btn-dark">Comprar</a>
-                </div>
-            </div>
+        <section id="prod_sweater" class="prod__container"></section>
 
-            <div class="card" style="width: 15rem;" id="prod__card">
-                <div class="prod__imagencontain">
-                    <img src="../assets/indumentaria/musc2.1.png" class="card-img-top" alt="Musculosa HAZloTuyo">
-                </div>
-                 <div class="card-body" >
-                  <h5 class="card-title">Musculosa original de HAZ lo Tuyo </h5>
-                  <p class="card-text">$700</p>
-                  <a href="./compra2.1.2.html" class="btn btn-dark">Comprar</a>
-                </div>
-            </div>
+        <div class="separador">Diseños para Prendas</div> 
 
-            <div class="card" style="width: 15rem;" id="prod__card">
-                <div class="prod__imagencontain">
-                    <img src="../assets/indumentaria/remera1.1.png" class="card-img-top" alt="Remera fluor">
-                </div>
-                 <div class="card-body" >
-                  <h5 class="card-title">Remera fluor original de HAZ lo Tuyo </h5>
-                  <p class="card-text">$600</p>
-                  <a href="./compra2.1.3.html" class="btn btn-dark">Comprar</a>
-                </div>
-            </div>
-            
-
-            
-        </section>
-        
+        <section id="prod_clothDesign" class="prod__container"></section>
         
     </main>
     
@@ -149,13 +122,13 @@
     </footer> 
 
 
-
+    <script src="../js/estilos.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
       </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
 
     
