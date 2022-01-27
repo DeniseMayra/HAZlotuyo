@@ -7,9 +7,26 @@ header {
   width: 100%;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 20px;
-  z-index: 30; }
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  header #ProductNav {
+    width: 100%; }
   header img {
     width: 50px; }
+  header #cartImg {
+    margin-right: 30px; }
+  header #cartInfo {
+    width: 80%;
+    background-color: #212529;
+    display: none; }
+    header #cartInfo .Total {
+      display: flex;
+      flex-direction: row;
+      color: white; }
+    header #cartInfo #buyButon {
+      width: 120px; }
 
 img {
   max-width: 100%;
@@ -169,10 +186,10 @@ h3 {
       text-transform: uppercase; }
     .home_parte2 .requisitos .requisitos__item {
       font-size: 20px;
-      padding: 0 25px; }
+      padding: 0 15px; }
       .home_parte2 .requisitos .requisitos__item span {
-        margin: 0 10px 10px 0;
-        padding: 3px;
+        margin: 0 10px 5px 0;
+        padding: 1px;
         background-color: #9db4c0;
         border-radius: 50%;
         width: 40px;
@@ -180,13 +197,14 @@ h3 {
         color: #e0fbfc;
         box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.658);
         display: inline-block; }
-    .home_parte2 .requisitos #pf1 {
+    .home_parte2 .requisitos .requisitos_boton {
       background-color: #253237;
-      margin-top: 40px;
+      margin-top: 25px;
       color: #e0fbfc;
       font-size: 30px;
       overflow: auto;
-      font-size: 20px; }
+      font-size: 20px;
+      padding: 10px 20px; }
     .home_parte2 .requisitos .boton {
       border: inset black;
       margin: 70px auto;
@@ -203,6 +221,9 @@ h3 {
     .home_parte2 .requisitos .boton:hover {
       transform: scale 1.5, 1.5;
       background-color: #5c6b73; }
+    .home_parte2 .requisitos .requItem {
+      display: none;
+      margin-top: 10px; }
 
 /* ----------------------- PRODUCTOS -----------------------*/
 .taza__banner {
@@ -267,11 +288,13 @@ h3 {
             img { transform: scale(1.2);}
         } 
     } */ }
-  .prod__container .item__descripcion {
+  .prod__container .item__description {
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
     font-family: 'Barlow Condensed', sans-serif;
     margin-top: 30px; }
+    .prod__container .item__description .addToCart {
+      background-color: #253237; }
 
 /* ----------------------- COMPRA -----------------------*/
 .compra__container {
@@ -360,40 +383,40 @@ h3 {
         text-align: center; }
 
 /* ----------------------- CONTACTO -----------------------*/
-.contacto__fondo {
+#contact {
   background-color: #9db4c0; }
 
-.contacto__container {
+#contacto__container {
   width: 360px;
-  height: 600px;
-  margin: 0 auto 300px auto;
-  padding-top: 100px;
+  height: 550px;
+  margin: 0 auto 100px auto;
+  padding-top: 50px;
   background-color: #e0fbfc;
   position: relative;
   overflow: hidden; }
-  .contacto__container .contacto__formitem {
+  #contacto__container .contacto__formitem {
     margin-top: 20px;
     margin-bottom: 0; }
-  .contacto__container form {
+  #contacto__container form {
     width: 280px;
     position: absolute;
-    top: 200px;
+    top: 130px;
     left: 40px;
     transition: 0.4s;
     font-family: 'Barlow Condensed', sans-serif; }
-    .contacto__container form input {
+    #contacto__container form input {
       width: 100%;
       padding: 10px 5px;
-      margin: 5px 0;
+      margin: 10px 0;
       border: 0;
       border-bottom: 1px solid #5c6b73;
       outline: none;
       background: transparent; }
-    .contacto__container form .boton-box {
+    #contacto__container form .boton-box {
       width: 100%;
       margin: 30px auto;
       text-align: center; }
-  .contacto__container button {
+  #contacto__container button {
     width: 110px;
     height: 35px;
     margin: 0 10px;
@@ -403,13 +426,13 @@ h3 {
     outline: none;
     color: #e0fbfc;
     cursor: pointer; }
-  .contacto__container #form2 {
+  #contacto__container #form2 {
     left: 450px; }
-  .contacto__container #form3 {
+  #contacto__container #form3 {
     left: -450px; }
-    .contacto__container #form3 .comentario {
+    #contacto__container #form3 .comentario {
       overflow: scroll; }
-  .contacto__container .step-row {
+  #contacto__container .step-row {
     width: 360px;
     height: 40px;
     margin: 0 auto;
@@ -417,12 +440,12 @@ h3 {
     align-items: center;
     box-shadow: 0 -1px 5px -1px #000;
     position: relative; }
-  .contacto__container .step-col {
+  #contacto__container .step-col {
     width: 120px;
     text-align: center;
     color: #333;
     position: relative; }
-  .contacto__container #progress {
+  #contacto__container #progress {
     position: absolute;
     height: 100%;
     width: 120px;

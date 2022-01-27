@@ -47,15 +47,39 @@
                         <li class="nav-item">
                             <a class="nav-link" href="tazas.html">Productos </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto </a>
-                        </li>
                     </ul>
                 </div>
             </div>
-            <img src="../assets/background.logos/carrito.png" alt="" id="cart">
+            <img src="../assets/background.logos/carrito.png" alt="Logo de Carrito" id="cartImg">
         </nav>
-
+        <!-- <div id="Cart"> -->
+                
+                <div id="cartInfo">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col"></th>
+                              <th scope="col">producto</th>
+                              <th scope="col">material</th>
+                              <th scope="col">precio</th>
+                              <th scope="col">cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                           
+                        </tbody>
+                    </table>
+                    <div class="row mx-4">
+                        <div class="col Total">
+                            <p>Total:  $<div id="cartTotal"></div></p>
+                        </div>
+                        <div class="col d-flex justify content-end">
+                            <button id="buyButon">Comprar </button>
+                        </div>
+                    </div>
+                </div>
+        <!-- </div> -->
     </header>
 
 
@@ -63,27 +87,19 @@
        
         
         <section class="taza__banner" id="cupSection">
-            <h1 class="animate__animated animate__fadeInUp">Nuestros productos</h1>
+            <h1 class="animate__animated animate__fadeInUp">Nuestras Tazas</h1>
         </section>
         
-        <section id="prod__container" class="prod__container"></section>
+        <section id="prod_cup" class="prod__container"></section>
 
-       <!--  <div class="separador">Diseños de Tazas</div> -->
+        <div class="separador">Tazas personalizadas</div> 
 
         <section id="prod_personalCup" class="prod__container"></section>
 
+        <div class="separador">Diseños</div> 
+
         <section id="prod_cupDesign" class="prod__container"></section>
 
-        
-
-        <section id="prod_clothes" class="prod__container"></section>
-
-        <section id="prod_disenoInd"></section>
- 
-        
-
-        
-        <script src="../js/estilos.js"></script>
         
     </main>
     
